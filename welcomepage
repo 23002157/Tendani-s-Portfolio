@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome | Tendani's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2255, #0073e6);
+      font-family: 'Arial', sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .welcome-container {
+      text-align: center;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    .welcome-container h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: glow 2s infinite alternate;
+    }
+
+    .welcome-container p {
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease 1.2s forwards;
+    }
+
+    .enter-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 8px;
+      color: #0f2255;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 15px #ffcc00;
+      animation: bounce 2s infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+      }
+      to {
+        text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-container">
+    <h1>Welcome to Tendani's World</h1>
+    <p>Ready to explore my portfolio?</p>
+    <a href="index.html">
+      <button class="enter-btn">Enter Portfolio</button>
+    </a>
+  </div>
+
+</body>
+</html>

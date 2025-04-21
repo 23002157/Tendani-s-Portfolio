@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact | Tendani's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="welcome.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="myprojects.html">Projects</a>
+    <a href="myDetails.html">Contact</a>
+  </nav>
+  
+  <img src="contactUs.jpg" alt="About Me" class="add-image">
+  
+  <section class="contact">
+    <h2>Get in touch with me<3!!</h2>
+    <p> You can reach me through the listed platforms below:</p>
+    
+    <div class="reach-me">
+      <p><strong>Contacts:</strong> 079 035 6394 OR 076 292 3146</p>
+      <p><strong>Emails:</strong> tendynems73@gmail.com Or 23002158@mvula.univen.ac.za</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/23002157" target="_blank">23002157</a></p>
+    </div>
+      <form class="contacts-form">
+        <input type="text" placeholder="Please Enter Your Name" required>
+        <input type="email" placeholder="Please Enter Your Email" required>
+        <textarea rows="5" placeholder="Please Enter Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </p>
+    <script>
+      const form = document.querySelector('.contacts-form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("Thank You For Reaching Out");
+        form.reset();
+      });
+      
+    </script>
+  </section>
+
+</body>
+</html>
