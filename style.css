@@ -56,7 +56,9 @@ border: 4px solid rgb(28, 28, 122);
     gap: 20px;
     padding: 20px;
   }
-  
+  html{
+      scroll-behaviour: smooth;
+  }
   .short-msg  {
     font-style: italic;
     padding: 15px;
