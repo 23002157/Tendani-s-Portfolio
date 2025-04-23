@@ -304,5 +304,11 @@ border: 4px solid rgb(28, 28, 122);
     to { opacity: 1; transform: translateY(0); }
   }
 
+footer{
+    text-align: center;
+    padding:20px;
+    color: white;
+}
+
   
   
